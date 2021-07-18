@@ -2,502 +2,532 @@
 <html>
 
 <head>
-  <title>Sujeet Singh | Fullstack Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title>Sujeet Singh | Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
 
-  <!-- HOSTED -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
-    rel="stylesheet" type="text/css" />
-  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+    <!-- HOSTED -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+        rel="stylesheet" type="text/css" />
+    <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
 
-  <!-- LOCAL -->
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel='icon' href='favicon.ico' />
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel='icon' href='favicon.ico' />
 
-  <!-- HOSTED -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
-  <!-- LOCAL -->
-  <script src="scripts/pt.min.js"></script>
-  <script src="scripts/index.js"></script>
-  <script src="scripts/modal.js"></script>
+    <!-- LOCAL -->
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
 </head>
 
 <body>
-  <div class="overflow-wrap">
-    <!-- HOME -->
-    <div class="modal-wrap flex">
-      <div class="mask"></div>
-      <div class="modal" id="modal">
-        <div class="carousel-wrap">
-          <div class="window">
-            <div id="carousel">
-              <div class="slide"></div>
-              <div class="slide"></div>
-              <div class="slide"></div>
-            </div>
-            <i class="mdi mdi-chevron-left" id="prev"></i>
-            <i class="mdi mdi-chevron-right" id="next"></i>
-          </div>
-        </div>
-        <div class="info-box">
-          <div class="title"></div>
-          <div class="tag"></div>
-          <div class="detail"></div>
-          <a href="#" target="_blank">
-            <div class="button1">
-              <i class="mdi mdi-open-in-new"></i>VIEW SOURCE
-            </div>
-          </a>
+    <div class="overflow-wrap">
+        <!-- HOME -->
+        <div class="modal-wrap flex">
+            <div class="mask"></div>
+            <div class="modal" id="modal">
+                <div class="carousel-wrap">
+                    <div class="window">
+                        <div id="carousel">
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                        </div>
+                        <i class="mdi mdi-chevron-left" id="prev"></i>
+                        <i class="mdi mdi-chevron-right" id="next"></i>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="title"></div>
+                    <div class="tag"></div>
+                    <div class="detail"></div>
+                    <a href="#" target="_blank">
+                        <div class="button1">
+                            <i class="mdi mdi-open-in-new"></i>VIEW SOURCE
+                        </div>
+                    </a>
 
-          <a href="#" target="_blank">
-            <div class="button">
-              <i class="mdi mdi-open-in-new"></i>VIEW SITE
-            </div>
-          </a>
+                    <a href="#" target="_blank">
+                        <div class="button">
+                            <i class="mdi mdi-open-in-new"></i>VIEW SITE
+                        </div>
+                    </a>
 
+                </div>
+                <i class="close mdi mdi-close"></i>
+            </div>
         </div>
-        <i class="close mdi mdi-close"></i>
-      </div>
+
+        <section id="home" class="flex height-fix">
+            <div id="pt" class="canvas"></div>
+            <div class="flex">
+                <div class="text">
+                    Hello, I'm <span class="highlight">Sujeet Singh</span>.
+                    <br />
+                    I'm a full-stack web developer.
+                </div>
+
+                <div class="button page-link" dest="about">
+                    View my work <i class="mdi mdi-arrow-right"></i>
+                </div>
+
+                <nav class="flex">
+                    <div class="link-wrap">
+                        <div class="active page-link"><a href="./RESUME/Sujeet_Singh_Resume.pdf">Resume</a></div>
+                        <div class="page-link" dest="about">about</div>
+                        <div class="page-link" dest="portfolio">portfolio</div>
+                        <div class="page-link" dest="experience">Experience</div>
+                        <div class="page-link" dest="contact">contact</div>
+
+                    </div>
+                    <i class="mdi mdi-menu"></i>
+                </nav>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">
+                    ABOUT
+                </div>
+                <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+                <div class="flex row label-wrap">
+                    <div class="flex row-gt-sm">
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-speedometer"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in">
+                                <div class="label bold">Fast</div>
+                                <div>
+                                    Fast load times and lag free interaction, my highest
+                                    priority.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-cellphone-link"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                                <div class="label bold">Responsive</div>
+                                <div>My layouts will work on any device, big or small.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex row-gt-sm">
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-lightbulb-outline"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                                <div class="label bold">Intuitive</div>
+                                <div>Strong preference for easy to use, intuitive UX/UI.</div>
+                            </div>
+                        </div>
+
+                        <div class="flex bullet-wrap ">
+                            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+                                <div class="hexagon">
+                                    <i class="mdi mdi-rocket"></i>
+                                </div>
+                            </div>
+                            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                                <div class="label bold">Dynamic</div>
+                                <div>
+                                    Websites don't have to be static, I love making pages come
+                                    to life.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-wrapper flex row-gt-sm">
+                    <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+                        <img src="img/me.png" class="me" />
+                        <div class="label bold">Who's this guy?</div>
+
+                        <div>
+                            I am a Full Stack Developer with experience in improving <br> software performance, testing and developing new software functionalities.
+                            I am passionate for projects of all sizes, from static web design and build, to dynamic websites. <br>
+                            <span class="highlight">Particularly enthusiastic and curious about learning new technologies and develop things based on it.</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:70%">
+                                <div class="tag bold flex">C/C++</div>
+                            </div>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:70%">
+                                <div class="tag bold flex">DataStructures</div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:80%">
+                                <div class="tag bold flex">JavaScript</div>
+                            </div>
+                            <span>75%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:65%">
+                                <div class="tag bold flex">Node.js</div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:60%">
+                                <div class="tag bold flex">Flask</div>
+                            </div>
+                            <span>60%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:65%">
+                                <div class="tag bold flex">Docker</div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:60%">
+                                <div class="tag bold flex">Vue.js</div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:50%">
+                                <div class="tag bold flex">CSS</div>
+                            </div>
+                            <span>50%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:70%">
+                                <div class="tag bold flex">MongoDB</div>
+                            </div>
+                            <span>65%</span>
+                        </div>
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width:65%">
+                                <div class="tag bold flex">SQL</div>
+                            </div>
+                            <span>75%</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="flex" id="portfolio">
+            <div class="header waypoint" data-animation="slide-in-right">
+                ACADEMIC PROJECTS
+            </div>
+            <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+            <div class="filter-wrap waypoint" data-animation="fade-in">
+                <div class="flex row">
+                    <div class="filter" data-filter="all">All</div>
+                    <div class="filter" data-filter=".nodejs">Node.js/Express.js</div>
+                    <div class="filter" data-filter=".flask">Flask</div>
+                    <div class="filter" data-filter=".js">JavaScript</div>
+                </div>
+                <div class="float-bar">
+                    <div class="flex row">
+                        <div class="filter" data-filter="all">All</div>
+                        <div class="filter" data-filter=".nodejs">Node.js/Express.js</div>
+                        <div class="filter" data-filter=".flask">Flask</div>
+                        <div class="filter" data-filter=".js">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery" class="container flex row wrap waypoint">
+                <div class="mix nodejs" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">weAsk</div>
+                            <span class="highlight">Node.js / MongoDB</span>
+                        </div>
+                        <div class="button" id="weask">LEARN MORE</div>
+                        <!-- https://github.com/powerfist01/weAsk -->
+                    </div>
+                </div>
+
+                <div class="mix nodejs" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Varta</div>
+                            <span class="highlight">Node.js / Express.js / SocketIO</span>
+                        </div>
+                        <div class="button" id="varta">LEARN MORE</div>
+                        <!-- https://github.com/powerfist01/varta -->
+                    </div>
+                </div>
+
+                <div class="mix js" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Daily Quoting</div>
+                            <span class="highlight">JavaScript / PWA </span>
+                        </div>
+                        <div class="button" id="daily">LEARN MORE</div>
+                        <!-- https://github.com/powerfist01/Daily-Quoting -->
+                    </div>
+                </div>
+
+                <div class="mix js" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">IIITU Sports</div>
+                            <span class="highlight">JavaScript / HTML5 / CSS</span>
+                        </div>
+                        <div class="button" id="iiitusports">LEARN MORE</div>
+                    </div>
+                </div>
+
+                <div class="mix nodejs" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Spark Your Mind</div>
+                            <span class="highlight">Node.js / Express.js / MongoDB</span>
+                        </div>
+                        <div class="button" id="sparkmind">LEARN MORE</div>
+                        <!-- https://github.com/powerfist01/Spark-Your-Mind -->
+                    </div>
+                </div>
+
+                <div class="mix c" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Hello World</div>
+                            <span class="highlight">C / C++</span>
+                        </div>
+                        <div class="button" id="helloworld">LEARN MORE</div>
+                        <!-- https://github.com/powerfist01/hello-world -->
+                    </div>
+                </div>
+
+                <div class="mix flask" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Note App</div>
+                            <span class="highlight">Python / Flask</span>
+                        </div>
+                        <div class="button" id="noteapp">LEARN MORE</div>
+                        <!-- https://github.com/powerfist01/NoteApp -->
+                    </div>
+                </div>
+
+                <div class="mix flask" data-my-order="1">
+                    <div>
+                        <div class="card"></div>
+                        <div class="text">
+                            <div class="bold">Book Cloud</div>
+                            <span class="highlight"> Python / Flask / Sqlite3</span>
+                        </div>
+                        <div class="button" id="bookcloud">LEARN MORE</div>
+                        <!-- https://github.com/powerfist01/Book-Cloud -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="flex" id="experience">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">EXPERIENCE</div>
+                <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+                <!-- Full Time Job at GreyB -->
+                <div class="flex-50-gt-sm wrap row" style="margin-bottom: 70px;">
+                    <div class="flex bullet-wrap ">
+                        <div class="wrap waypoint" data-animation="flip-in-x">
+                            <div class="label bold" style="text-align: center;">GreyB Services Pvt. Ltd.</div>
+                            <div class="flex label highlight">Fulltime - Software Developer</div>
+                            <div class="flex" style="margin-bottom: 30px;">(June 2020 - Present)</div>
+                        </div>
+                        <div class="row wrap">
+                            <i class="mdi mdi-play"></i>
+                            Contributed software engineering expertise in the development of products through the <span
+                                class="highlight">software lifecycle</span> , from requirements definition through
+                            successful deployment. <br />
+                            <i class="mdi mdi-play"></i>
+                            Introduced new methodologies and best practices that <span class="highlight">enhanced
+                                product definition</span>, release processes and customization of applications to user
+                            needs.
+                            <br />
+                            <i class="mdi mdi-play"></i>
+                            Learned JavaScript framework <span class="highlight">Vue.js</span> and <span
+                                class="highlight">Docker</span> for implementation of CI/CD on gitlab.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship at Flick2Know -->
+                <div class="flex-50-gt-sm wrap row">
+                    <div class="flex bullet-wrap ">
+                        <div class="wrap waypoint" data-animation="flip-in-x">
+                            <div class="label bold">Flick2Know Technologies Pvt. Ltd.</div>
+                            <div class="flex label highlight">Internship - Software Engineer</div>
+                            <div class="flex" style="margin-bottom: 30px;">(May 2019 - July 2019)</div>
+                        </div>
+                        <div class="row wrap">
+                            <i class="mdi mdi-play"></i>
+                            Initially worked on the dashboard using Node.js <span
+                                class="highlight">Express.js</span> framework and
+                            <span class="highlight">MongoDB</span>
+                            to add APIs for the website of their new product Qart Fashion. <br />
+                            <i class="mdi mdi-play"></i>
+                            Performed various aggregations on the MongoDB database.
+                            <br />
+                            <i class="mdi mdi-play"></i>
+                            Learned JavaScript libraries <span class="highlight">CubeJS</span> and <span
+                                class="highlight">PivotTableJS</span> used in data analytics to organize and
+                            display the result dynamically.
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+            </svg>
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">
+                    CONTACT
+                </div>
+                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+                <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
+                    Do you wanna get in touch, talk to me about a project or just
+                    say hi, <br> send an email to <a href="mailto:sujeets207@gmail.com" class="highlight"
+                        style="color: #e31b6d;">sujeets207@gmail.com</a>
+                    and ~let's talk.
+                </div>
+                <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
+                    <input placeholder="Name" type="text" name="name" required />
+                    <input placeholder="Enter email" type="email" name="email" required />
+                    <textarea placeholder="Your Message" type="text" name="message" required></textarea>
+                    <div id="success">
+                        <div>
+                            Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+                        </div>
+                    </div>
+                    <input class="button" type="submit" id="submit" value="SUBMIT" style="margin-bottom: 30px;" />
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+            <div class="icon-wrap flex row">
+                <a href="https://www.linkedin.com/in/powerfist01" target="_blank">
+                    <div class="flex icon" id="icon-2">
+                        <i class="mdi mdi-linkedin"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.github.com/powerfist01" target="_blank">
+                    <div class="flex icon" id="icon-3">
+                        <i class="mdi mdi-github-box "></i>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/powerfist01" target="_blank">
+                    <div class="flex icon" id="icon-4">
+                        <i class="mdi mdi-facebook"></i>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/powerfist01" target="_blank">
+                    <div class="flex icon" id="icon-5">
+                        <i class="mdi mdi-twitter"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="info-box">
+                <div class="footnote">
+                    SUJEET SINGH <span class="highlight">&copy;2020</span>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="scripts/canvas.js"></script>
+    <!-- Firebase -->
+    <script defer src="/__/firebase/7.14.2/firebase-app.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
 
-    <section id="home" class="flex height-fix">
-      <div id="pt" class="canvas"></div>
-      <div class="flex">
-        <div class="text">
-          Hello, I'm <span class="highlight">Sujeet Singh</span>.
-          <br />
-          I'm a full-stack web developer.
-        </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
 
-        <div class="button page-link" dest="about">
-          View my work <i class="mdi mdi-arrow-right"></i>
-        </div>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
 
-        <nav class="flex">
-          <div class="link-wrap">
-            <div class="active page-link"><a href="./RESUME/Sujeet_Singh_Resume.pdf">Resume</a></div>
-            <div class="page-link" dest="about">about</div>
-            <div class="page-link" dest="portfolio">portfolio</div>
-            <div class="page-link" dest="experience">Experience</div>
-            <div class="page-link" dest="contact">contact</div>
-            
-          </div>
-          <i class="mdi mdi-menu"></i>
-        </nav>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container flex">
-        <div class="header waypoint" data-animation="slide-in-left">
-          ABOUT
-        </div>
-        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
-
-        <div class="flex row label-wrap">
-          <div class="flex row-gt-sm">
-            <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint" data-animation="flip-in-x">
-                <div class="hexagon">
-                  <i class="mdi mdi-speedometer"></i>
-                </div>
-              </div>
-              <div class="waypoint" data-animation="fade-in">
-                <div class="label bold">Fast</div>
-                <div>
-                  Fast load times and lag free interaction, my highest
-                  priority.
-                </div>
-              </div>
-            </div>
-
-            <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
-                <div class="hexagon">
-                  <i class="mdi mdi-cellphone-link"></i>
-                </div>
-              </div>
-              <div class="waypoint" data-animation="fade-in" data-delay=".2s">
-                <div class="label bold">Responsive</div>
-                <div>My layouts will work on any device, big or small.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex row-gt-sm">
-            <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
-                <div class="hexagon">
-                  <i class="mdi mdi-lightbulb-outline"></i>
-                </div>
-              </div>
-              <div class="waypoint" data-animation="fade-in" data-delay=".4s">
-                <div class="label bold">Intuitive</div>
-                <div>Strong preference for easy to use, intuitive UX/UI.</div>
-              </div>
-            </div>
-
-            <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
-                <div class="hexagon">
-                  <i class="mdi mdi-rocket"></i>
-                </div>
-              </div>
-              <div class="waypoint" data-animation="fade-in" data-delay=".6s">
-                <div class="label bold">Dynamic</div>
-                <div>
-                  Websites don't have to be static, I love making pages come
-                  to life.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills-wrapper flex row-gt-sm">
-          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
-            <img src="img/me.png" class="me" />
-            <div class="label bold">Who's this guy?</div>
-
-            <div>
-              I am a full-stack web developer with experience in improving software performance, testing and developing new software functionalities.
-              I am <span class="highlight">passionate for projects of all sizes</span>, from static web design and build, to dynamic websites.
-              <br />
-              I am eager to learn new technologies and develop things based on it.
-            </div>
-          </div>
-
-          <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
-
-            
-            <div class="bar flex">
-              <div class="bar fill" style="width:70%">
-                <div class="tag bold flex">C/C++</div>
-              </div>
-              <span>70%</span>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:70%">
-                <div class="tag bold flex">DataStructures</div>
-              </div>
-              <span>65%</span>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:80%">
-                <div class="tag bold flex">JavaScript</div>
-              </div>
-              <span>75%</span>
-            </div>
-            
-            <div class="bar flex">
-              <div class="bar fill" style="width:65%">
-                <div class="tag bold flex">Node.js</div>
-              </div>
-              <span>65%</span>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:60%">
-                <div class="tag bold flex">Flask</div>
-              </div>
-              <span>60%</span>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:65%">
-                <div class="tag bold flex">Docker</div>
-              </div>
-              <span>65%</span>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:60%">
-                <div class="tag bold flex">Vue.js</div>
-              </div>
-              <span>60%</span>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:50%">
-                <div class="tag bold flex">CSS</div>
-              </div>
-              <span>50%</span>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:70%">
-                <div class="tag bold flex">MongoDB</div>
-              </div>
-              <span>70%</span>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:65%">
-                <div class="tag bold flex">SQL</div>
-              </div>
-              <span>65%</span>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section class="flex" id="portfolio">
-      <div class="header waypoint" data-animation="slide-in-right">
-        ACADEMIC PROJECTS
-      </div>
-      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
-
-      <div class="filter-wrap waypoint" data-animation="fade-in">
-        <div class="flex row">
-          <div class="filter" data-filter="all">All</div>
-          <div class="filter" data-filter=".nodejs">Node.js/Express.js</div>
-          <div class="filter" data-filter=".flask">Flask</div>
-          <div class="filter" data-filter=".js">JavaScript</div>
-        </div>
-        <div class="float-bar">
-          <div class="flex row">
-            <div class="filter" data-filter="all">All</div>
-            <div class="filter" data-filter=".nodejs">Node.js/Express.js</div>
-            <div class="filter" data-filter=".flask">Flask</div>
-            <div class="filter" data-filter=".js">JavaScript</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery" class="container flex row wrap waypoint">
-        <div class="mix nodejs" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">weAsk</div>
-              <span class="highlight">Node.js / MongoDB</span>
-            </div>
-            <div class="button" id="weask">LEARN MORE</div>
-            <!-- https://github.com/powerfist01/weAsk -->
-          </div>
-        </div>
-
-        <div class="mix nodejs" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Varta</div>
-              <span class="highlight">Node.js / Express.js / SocketIO</span>
-            </div>
-            <div class="button" id="varta">LEARN MORE</div>
-            <!-- https://github.com/powerfist01/varta -->
-          </div>
-        </div>
-
-        <div class="mix js" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Daily Quoting</div>
-              <span class="highlight">JavaScript / PWA </span>
-            </div>
-            <div class="button" id="daily">LEARN MORE</div>
-            <!-- https://github.com/powerfist01/Daily-Quoting -->
-          </div>
-        </div>
-
-        <div class="mix js" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">IIITU Sports</div>
-              <span class="highlight">JavaScript / HTML5 / CSS</span>
-            </div>
-            <div class="button" id="iiitusports">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix nodejs" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Spark Your Mind</div>
-              <span class="highlight">Node.js / Express.js / MongoDB</span>
-            </div>
-            <div class="button" id="sparkmind">LEARN MORE</div>
-            <!-- https://github.com/powerfist01/Spark-Your-Mind -->
-          </div>
-        </div>
-
-        <div class="mix c" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Hello World</div>
-              <span class="highlight">C / C++</span>
-            </div>
-            <div class="button" id="helloworld">LEARN MORE</div>
-            <!-- https://github.com/powerfist01/hello-world -->
-          </div>
-        </div>
-
-        <div class="mix flask" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Note App</div>
-              <span class="highlight">Python / Flask</span>
-            </div>
-            <div class="button" id="noteapp">LEARN MORE</div>
-            <!-- https://github.com/powerfist01/NoteApp -->
-          </div>
-        </div>
-
-        <div class="mix flask" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Book Cloud</div>
-              <span class="highlight"> Python / Flask / Sqlite3</span>
-            </div>
-            <div class="button" id="bookcloud">LEARN MORE</div>
-            <!-- https://github.com/powerfist01/Book-Cloud -->
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="flex" id="experience">
-      <div class="container flex">
-        <div class="header waypoint" data-animation="slide-in-left">EXPERIENCE</div>
-        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
-
-        <!-- Full Time Job at GreyB -->
-        <div class="flex-50-gt-sm wrap row" style="margin-bottom: 70px;">
-          <div class="flex bullet-wrap ">
-            <div class="wrap waypoint" data-animation="flip-in-x">
-              <div class="label bold" style="text-align: center;">GreyB Services Pvt. Ltd.</div>
-              <div class="flex label highlight">Fulltime - Fullstack Developer</div>
-              <div class="flex" style="margin-bottom: 30px;">(June 2020 - Present)</div>
-            </div>
-            <div class="row wrap">
-              <i class="mdi mdi-play"></i>
-              Contributed software engineering expertise in the development of products through the <span class="highlight">software lifecycle</span> , from requirements definition through successful deployment. <br/>
-              <i class="mdi mdi-play"></i>
-              Introduced new methodologies and best practices that <span class="highlight">enhanced product definition</span>, release processes and customization of applications to user needs.
-              <br />
-              <i class="mdi mdi-play"></i>
-              Learned JavaScript framework <span class="highlight">Vue.js</span> and <span class="highlight">Docker</span> for implementation of CI/CD on gitlab.
-            </div>
-          </div>
-        </div>
-
-        <!-- Internship at Flick2Know -->
-        <div class="flex-50-gt-sm wrap row">
-          <div class="flex bullet-wrap ">
-            <div class="wrap waypoint" data-animation="flip-in-x">
-              <div class="label bold">Flick2Know Technologies Pvt. Ltd.</div>
-              <div class="flex label highlight">Internship - Software Engineer</div>
-              <div class="flex" style="margin-bottom: 30px;">(May 2019 - July 2019)</div>
-            </div>
-            <div class="row wrap">
-              <i class="mdi mdi-play"></i>
-              Initially worked on their dashboard using Node.js framework <span class="highlight">Express.js</span> and
-              <span class="highlight">MongoDB</span>
-              to add APIs for the website of their new product Qart Fashion. <br />
-              <i class="mdi mdi-play"></i>
-              Performed various aggregations on the database using <span class="highlight">MongoClient</span>
-              and <span class="highlight">Mongoose</span>.
-              <br />
-              <i class="mdi mdi-play"></i>
-              Learned JavaScript libraries <span class="highlight">CubeJS</span> and <span
-                class="highlight">PivotTableJS</span> used in data analytics to organize and
-              display the result dynamically.
-            </div>
-          </div>
-        </div>
-
-        
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-        xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-      </svg>
-      <div class="container flex">
-        <div class="header waypoint" data-animation="slide-in-left">
-          CONTACT
-        </div>
-        <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
-        <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
-          If you wanna get in touch, talk to me about a project or just
-          say hi, <br> send an email to <a href="mailto:sujeets207@gmail.com" class="highlight" style="color: #e31b6d;">sujeets207@gmail.com</a>
-          and ~let's talk.
-        </div>
-        <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
-          <input placeholder="Name" type="text" name="name" required />
-          <input placeholder="Enter email" type="email" name="email" required />
-          <textarea placeholder="Your Message" type="text" name="message" required></textarea>
-          <div id="success">
-            <div>
-              Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
-            </div>
-          </div>
-          <input class="button" type="submit" id="submit" value="SUBMIT" style="margin-bottom: 30px;" />
-        </form>
-      </div>
-    </section>
-
-    <footer>
-      <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
-
-      <div class="icon-wrap flex row">
-        <a href="https://www.linkedin.com/in/powerfist01" target="_blank">
-          <div class="flex icon" id="icon-2">
-            <i class="mdi mdi-linkedin"></i>
-          </div>
-        </a>
-
-        <a href="https://www.github.com/powerfist01" target="_blank">
-          <div class="flex icon" id="icon-3">
-            <i class="mdi mdi-github-box "></i>
-          </div>
-        </a>
-
-        <a href="https://www.facebook.com/powerfist01" target="_blank">
-          <div class="flex icon" id="icon-4">
-            <i class="mdi mdi-facebook"></i>
-          </div>
-        </a>
-
-        <a href="https://twitter.com/powerfist01" target="_blank">
-          <div class="flex icon" id="icon-5">
-            <i class="mdi mdi-twitter"></i>
-          </div>
-        </a>
-      </div>
-      <div class="info-box">
-        <div class="footnote">
-          SUJEET SINGH <span class="highlight">&copy;2020</span>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="scripts/canvas.js"></script>
-  <!-- Firebase -->
-  <script defer src="/__/firebase/7.14.2/firebase-app.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
-  <script defer src="/__/firebase/init.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDfNincGcrvI3JqmAJRb4gih_hmntLVTow",
+            authDomain: "theportfolio01.firebaseapp.com",
+            databaseURL: "https://theportfolio01.firebaseio.com",
+            projectId: "theportfolio01",
+            storageBucket: "theportfolio01.appspot.com",
+            messagingSenderId: "981059813827",
+            appId: "1:981059813827:web:4612af8b1ac03b8a19fd76",
+            measurementId: "G-4SR11421CL"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </body>
 
 </html>
