@@ -53,6 +53,13 @@ $(document).ready(function () {
       tag: 'SAVE ALL YOU NEED.',
       detail: 'Simple Flask app for you to take notes and save them for next time.',
       source: 'https://github.com/powerfist01/NoteApp'
+    },
+    blockchain: {
+      title: 'Hello Blockchain',
+      tag: 'FIRST BLOCKCHAIN DAPP',
+      detail: 'View and update you latest message on ethereum blockchain.',
+      link: 'https://hello-blockchain.netlify.app/',
+      source: 'https://github.com/powerfist01/hello-blockchain'
     }
   };
 
