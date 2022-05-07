@@ -36,12 +36,6 @@ $(document).ready(function () {
       detail: 'Simple portal in Flask and Sqlite3 to upload and download books.',
       source: 'https://github.com/powerfist01/Book-Cloud'
     },
-    helloworld: {
-      title: 'C / C++ Codes',
-      tag: 'COMPETITIVE PROGRAMMING.',
-      detail: 'Repository for most of my programming codes in C and C++ languages.',
-      source: 'https://github.com/powerfist01/hello-world'
-    },
     sparkmind: {
       title: 'Spark Your Mind',
       tag: 'WELCOME TO THE TRIVIA.',
