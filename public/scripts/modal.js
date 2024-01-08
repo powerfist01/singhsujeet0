@@ -46,6 +46,7 @@ $(document).ready(function () {
       title: 'Note App',
       tag: 'SAVE ALL YOU NEED.',
       detail: 'Simple Flask app for you to take notes and save them for next time.',
+      link: 'http://13.201.116.249:4000/',
       source: 'https://github.com/powerfist01/NoteApp'
     },
     blockchain: {
