@@ -1,0 +1,186 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Resume
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Fonts location
+\fontdir[fonts/]
+
+% Highlight color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange ,awesome-nephritis, awesome-concrete
+\colorlet{awesome}{awesome-nephritis}
+
+% Section color highlight
+\setbool{acvSectionColorHighlight}{true}
+
+% Social info separator
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Sujeet}{Singh}
+\position{Senior Software Developer{\enskip\cdotp\enskip}AI Engineer}
+\address{}
+\mobile{+91 8351966171}
+\email{sujeets207@gmail.com}
+\homepage{singhsujeet0.web.app}
+\linkedin{powerfist01}
+
+\begin{document}
+
+% Header
+\makecvheader[C]
+
+% % Footer
+% \makecvfooter
+%   {\today}
+%   {Sujeet Singh~~~·~~~Resume}
+%   {}
+
+%-------------------------------------------------------------------------------
+%	Objective
+%-------------------------------------------------------------------------------
+\cvsection{Summary}
+
+\begin{cvparagraph}
+Software Engineer with 6+ years of experience building production-grade backend systems, designing distributed architectures and scalable APIs - primarily in Python, PostgreSQL, and AWS. Proven track record of delivering high-performance systems that reduced API latency by 40\% under high-traffic, data-intensive workloads. Hands-on experience integrating LLMs into production pipelines for search optimization and automated data categorization. Focused on architecting AI-assisted systems and agentic workflows, bridging system design expertise with product strategy.
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+%	Work Experience
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {SDE 2} % Job title
+    {Hexalog} % Organization
+    {Gurugram, India} % Location
+    {Mar 2026 - PRESENT} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Architecting agentic document-processing pipelines using LangGraph and Claude, automating end-to-end extraction, transformation, and structured storage to S3 and PostgreSQL for logistics trade workflows.}
+        \item {Designing and developing a Python-based AI microservice layer exposed over gRPC, enabling a Java backend to delegate LLM inference and AI processing tasks - decoupling core business logic from AI capabilities in a polyglot distributed system.}
+      \end{cvitems}
+    }
+\vspace{0.4cm}  % <-- Adds extra space
+
+
+%---------------------------------------------------------
+\cventry
+    {Utility Lead} % Job title
+    {GreyB Research} % Organization
+    {Mohali, India} % Location
+    {Oct 2025 - Mar 2026} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Scaled the patent litigation analytics and intelligence platform to 200K+ monthly visitors by leading full-cycle product development - owning architectural decisions, data pipeline reliability, and cross-functional feature delivery across the IP industry.}
+        \item {Built an LLM-powered natural language search system with schema-aware SQL generation and constraint validation — enabling non-technical users to query complex patent datasets with zero hallucination risk in production.}
+      \end{cvitems}
+    }
+\vspace{0.4cm}  % <-- Adds extra space
+
+\cventry
+    {Senior Software Developer} % Job title
+    {} % Organization
+    {} % Location
+    {Oct 2023 - Sep 2025} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Led end-to-end development of a global drug and patent monitoring platform, designing multi-tenant architecture with RBAC to enable pharmaceutical clients to track all FDA-approved drugs and associated patent landscapes across global jurisdictions.}
+        \item {Engineered asynchronous ingestion pipelines and a queue-based alert system to monitor 1M+ patents in real time, delivering zero-message-loss portfolio notifications while reducing data processing latency by 40\% under high-throughput conditions.}
+        \item {Integrated Claude and ChatGPT into patent classification pipelines via prompt engineering, automating categorization by type (Molecular, Formulation, Process) and drug portfolio mapping - achieving 90\%+ accuracy across multilingual datasets.}
+        \item {Identified a critical gap in patent litigation analytics and drove ground-up development of the analytics platform - architecting the system across a FastAPI/PostgreSQL backend, Nuxt 3 frontend, and AWS infrastructure (S3, Lambda), scaling it to 100K+ monthly users.}
+      \end{cvitems}
+    }
+
+\vspace{0.4cm}  % <-- Adds extra space
+
+\cventry
+    {Software Developer} % Job title
+    {} % Organization
+    {} % Location
+    {Jun 2020 - Sep 2023} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Built a serverless data ingestion pipeline on AWS Lambda to automate scheduled ETL of patent datasets, achieving over 20x improvement in processing throughput and enabling daily refresh cycles with no manual intervention.}
+        \item {Designed and shipped Python-based automation tools to replace analyst-operated manual workflows across data collection and enrichment tasks, cutting processing time and reducing error rates by more than 90\%, directly improving downstream data reliability for product features.}
+        \item {Designed and optimized PostgreSQL schemas and queries for large-scale patent datasets, applying advanced indexing and query tuning techniques that delivered up to 40\% improvement in query performance across high-volume analytics and search workloads.}
+      \end{cvitems}
+    }
+
+\vspace{0.6cm}  % <-- Adds extra space
+
+\cventry
+    {Software Engineer Intern} % Job title
+    {Flick2Know Technologies} % Organization
+    {Gurugram, India} % Location
+    {May 2019 - Jul 2019} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Built a CRUD-based Feedback REST API using Node.js, handling end-to-end user feedback submission, processing, and persistent storage in the database.}
+        \item {Queried and analyzed 1M+ retail records using MongoDB aggregation pipelines to identify purchasing trends and customer segments.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	Technical Skills
+%-------------------------------------------------------------------------------
+
+\vspace{0.4cm}  % <-- Adds extra space
+
+\cvsection{Technical Skills}
+\begin{cvskills}
+\cvskill
+    {Programming Languages}
+    {Python, JavaScript, C/C++, SQL}
+\cvskill
+    {Cloud \& DevOps Tools}
+    {AWS (Lambda, S3, EC2), Docker, CI/CD, Apache Web Server}
+\cvskill
+    {Frameworks \& Tools}
+    {FastAPI, Django, Flask, Node.js, Vue.js, Nuxt 3, gRPC}
+\cvskill
+    {AI/ML \& LLMs}
+    {LangGraph, Claude \& OpenAI SDK, Prompt Engineering, RAG, AI Agents}
+\cvskill
+    {Databases}
+    {PostgreSQL, MySQL, Elasticsearch, Redis}
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+%	Education
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\begin{cventries}
+
+\cventry
+    {Bachelor of Technology in Computer Science and Engineering (CGPA: 8.17)} % Degree
+    {Indian Institute of Information Technology, Una} % Institution
+    {Himachal Pradesh, India} % Location
+    {Jul 2016 - May 2020} % Date(s)
+    {Computer Science, Data Structures and Algorithms, OOP, DBMS, OS}
+
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	Projects
+%-------------------------------------------------------------------------------
+
+\end{document}
