@@ -6,7 +6,6 @@ $(document).ready(function () {
       tag: 'CONNECT TO EXPERIENCED ONES.',
       detail:
         'Question and Answer portal for students regarding their small issues when they join a new college. Experienced ones can help the rest.',
-      link: 'http://weask.herokuapp.com/',
       source: 'https://github.com/powerfist01/weAsk'
     },
     varta: {
@@ -27,7 +26,6 @@ $(document).ready(function () {
       title: 'IIITU Sports',
       tag: 'IIIT UNA SPORTS WEBSITE.',
       detail: 'The Sports Website of IIIT Una.',
-      link: 'https://iiitusports.herokuapp.com/',
       source: 'https://github.com/powerfist01/iiitusports'
     },
     bookcloud: {
@@ -40,13 +38,12 @@ $(document).ready(function () {
       title: 'Spark Your Mind',
       tag: 'WELCOME TO THE TRIVIA.',
       detail: 'Trivia website for option to add questions and do a quick quiz to know better abot any topic.',
-      source: 'https://github.com/powerfist01/Spark-Your-Mind '
+      source: 'https://github.com/powerfist01/Spark-Your-Mind'
     },
     noteapp: {
       title: 'Note App',
       tag: 'SAVE ALL YOU NEED.',
       detail: 'Simple Flask app for you to take notes and save them for next time.',
-      link: 'http://13.201.116.249:4000/',
       source: 'https://github.com/powerfist01/NoteApp'
     },
     blockchain: {
@@ -86,11 +83,11 @@ $(document).ready(function () {
     shiftSlide(1);
   });
 
-  carousel.on('mousedown', function () {
+  carousel.on('mousedown', function (e) {
     if (carousel.hasClass('transition')) return;
-    dragStart = event.pageX;
-    $(this).on('mousemove', function () {
-      dragEnd = event.pageX;
+    dragStart = e.pageX;
+    $(this).on('mousemove', function (moveEvent) {
+      dragEnd = moveEvent.pageX;
       $(this).css('transform', 'translateX(' + dragPos() + 'px)');
     });
     $(document).on('mouseup', function () {
@@ -144,10 +141,13 @@ $(document).ready(function () {
     $('#modal .title').text(modalText[id].title);
     $('#modal .detail').text(modalText[id].detail);
     $('#modal .tag').text(modalText[id].tag);
-    $('#modal .button1')
+    $('#modal .button1, #modal .button').removeClass('visible');
+
+    if (modalText[id].source)
+      $('#modal .button1')
         .addClass('visible')
         .parent()
-        .attr('href', modalText[id].source)
+        .attr('href', modalText[id].source);
 
     if (modalText[id].link)
       $('#modal .button')
@@ -155,9 +155,6 @@ $(document).ready(function () {
         .parent()
         .attr('href', modalText[id].link);
 
-    $.each($('#modal li'), function (index, value) {
-      $(this).text(modalText[id].bullets[index]);
-    });
     $.each($('#modal .slide'), function (index, value) {
       $(this).css({
         background:

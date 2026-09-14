@@ -633,63 +633,68 @@ section {
       z-index: 1;
     }
 
-    .bars-wrap {
+    .skills-list {
+      align-items: flex-start;
+      justify-content: flex-start;
       margin: 50px auto 0 auto;
       max-width: 90%;
       width: calc(100% - 15px);
+    }
 
-      &:not(.animated) {
-        .fill {
-          width: 0 !important;
-        }
+    .skill-group {
+      margin: 0 0 22px 0;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
 
-    .bar {
-      align-items: flex-end;
-      background-color: #eee;
-      color: #666;
-      font-size: 7pt;
-      height: 22px;
-      margin: 0 0 12px 0;
-      position: relative;
+    .skill-group-title {
+      color: $primary-dark;
+      font-family: 'Raleway-bold';
+      font-size: 8pt;
+      letter-spacing: 1.5px;
+      margin: 0 0 10px 0;
+      text-align: left;
+      text-transform: uppercase;
+    }
 
-      @for $i from 1 through 10 {
-        &:nth-child(#{$i}) .fill {
-          transition: #{1 + ($i * 0.1)}s 0.2s width ease-in-out;
-        }
+    .skill-chips {
+      align-items: flex-start;
+      gap: 8px;
+      justify-content: flex-start;
+    }
+
+    .skill-chip {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      color: #555;
+      display: inline-block;
+      font-family: 'Raleway-semibold';
+      font-size: 8pt;
+      line-height: 1;
+      padding: 7px 11px;
+      transition: 0.25s ease;
+      white-space: nowrap;
+
+      &:hover {
+        border-color: $primary;
+        color: $primary-darker;
+        transform: translateY(-2px);
       }
 
-      span {
-        display: none;
-      }
-
-      &.fill {
-        @include pos($top: 0, $left: 0);
-        background-color: $primary-dark;
-        opacity: 1;
-        padding: 0;
-      }
-
-      .tag {
-        @include pos($top: 0, $left: 0);
+      &.primary {
         background-color: $primary;
+        border-color: $primary;
         color: #fff;
-        height: 100%;
-        width: 150px;
-        width: 70px;
-      }
 
-      &.secondary {
-        background-color: $secondary-dark;
-        .tag {
-          background-color: $secondary;
+        &:hover {
+          background-color: $primary-dark;
+          border-color: $primary-dark;
+          color: #fff;
         }
-      }
-
-      span {
-        padding: 0 15px 0 0;
-        z-index: 1;
       }
     }
   }
@@ -1222,18 +1227,13 @@ footer {
         }
       }
 
-      .bar {
-        font-size: 11pt;
-        height: 28px;
-        margin: 0 0 15px 0;
+      .skill-group-title {
+        font-size: 9pt;
+      }
 
-        span {
-          display: initial;
-        }
-
-        .tag {
-          width: 150px;
-        }
+      .skill-chip {
+        font-size: 9.5pt;
+        padding: 8px 13px;
       }
 
       .hexagon i {
@@ -1364,7 +1364,7 @@ footer {
   section {
     // ABOUT
     &:nth-of-type(2) {
-      .bars-wrap {
+      .skills-list {
         margin: 0 0 0 0;
       }
 
@@ -1374,10 +1374,6 @@ footer {
         .me {
           margin: 0;
         }
-      }
-
-      .bar {
-        max-width: 90%;
       }
 
       .bullet-wrap {

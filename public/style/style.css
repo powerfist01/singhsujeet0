@@ -202,7 +202,7 @@ body {
   background-color: #04c2c9;
   display: inline-block;
   height: 100%;
-  width: calc(100% * 0.57735);
+  width: 57.735%;
 }
 
 .hexagon:before {
@@ -210,7 +210,7 @@ body {
   content: "";
   height: inherit;
   position: absolute;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  right: 21.1325%;
   top: 0;
   transform: rotateZ(60deg);
   width: inherit;
@@ -221,14 +221,14 @@ body {
   content: "";
   height: inherit;
   position: absolute;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  right: 21.1325%;
   top: 0;
   transform: rotateZ(-60deg);
   width: inherit;
 }
 
 .highlight {
-  color: #04787c;
+  color: #e31b6d;
 }
 
 .header {
@@ -289,15 +289,15 @@ nav .link-wrap {
 nav .link-wrap.visible {
   height: 220px;
 }
+nav .link-wrap div:first-child {
+  padding: 25px 20px 12px 20px;
+}
 nav .link-wrap div {
   cursor: pointer;
   font-size: 12pt;
   padding: 12px 20px;
   text-transform: uppercase;
   transition: color 0.5s;
-}
-nav .link-wrap div:first-child {
-  padding: 25px 20px 12px 20px;
 }
 nav .link-wrap div:hover {
   color: #e31b6d;
@@ -443,7 +443,7 @@ nav .active {
   cursor: pointer;
   font-size: 10pt;
   font-weight: 600;
-  margin-left: 170px;
+  left: 10px;
   padding: 11px 30px;
   pointer-events: none;
   position: absolute;
@@ -458,32 +458,6 @@ nav .active {
   background: #fff;
   color: #e31b6d;
 }
-
-/* Button Here */
-.modal-wrap .button1 {
-  background: #e31b6d;
-  border: 0;
-  bottom: 20px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 10pt;
-  font-weight: 600;
-  left: 10px;
-  padding: 11px 30px;
-  pointer-events: none;
-  position: absolute;
-  transition: all 0.5s;
-  visibility: hidden;
-}
-.modal-wrap .button1.visible {
-  pointer-events: initial;
-  visibility: visible;
-}
-.modal-wrap .button:hover {
-  background: #fff;
-  color: #e31b6d;
-}
-
 .modal-wrap .carousel {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
@@ -555,7 +529,7 @@ section:nth-of-type(2) .bullet-wrap {
   padding: 0 7px;
 }
 section:nth-of-type(2) .highlight {
-  color: #e31b6d;
+  color: #009ada;
 }
 section:nth-of-type(2) .up-arrow {
   height: 30px;
@@ -580,98 +554,61 @@ section:nth-of-type(2) .hexagon i {
   top: 20px;
   z-index: 1;
 }
-section:nth-of-type(2) .bars-wrap {
+section:nth-of-type(2) .skills-list {
+  align-items: flex-start;
+  justify-content: flex-start;
   margin: 50px auto 0 auto;
   max-width: 90%;
   width: calc(100% - 15px);
 }
-section:nth-of-type(2) .bars-wrap:not(.animated) .fill {
-  width: 0 !important;
+section:nth-of-type(2) .skill-group {
+  margin: 0 0 22px 0;
+  width: 100%;
 }
-section:nth-of-type(2) .bar {
-  align-items: flex-end;
-  background-color: #eee;
-  color: #666;
-  font-size: 7pt;
-  height: 22px;
-  margin: 0 0 12px 0;
-  position: relative;
+section:nth-of-type(2) .skill-group:last-child {
+  margin-bottom: 0;
 }
-section:nth-of-type(2) .bar:nth-child(1) .fill {
-  transition: 1.1s 0.2s width ease-in-out;
+section:nth-of-type(2) .skill-group-title {
+  color: #00a1a7;
+  font-family: "Raleway-bold";
+  font-size: 8pt;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px 0;
+  text-align: left;
+  text-transform: uppercase;
 }
-section:nth-of-type(2) .bar:nth-child(2) .fill {
-  transition: 1.2s 0.2s width ease-in-out;
+section:nth-of-type(2) .skill-chips {
+  align-items: flex-start;
+  gap: 8px;
+  justify-content: flex-start;
 }
-section:nth-of-type(2) .bar:nth-child(3) .fill {
-  transition: 1.3s 0.2s width ease-in-out;
+section:nth-of-type(2) .skill-chip {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  color: #555;
+  display: inline-block;
+  font-family: "Raleway-semibold";
+  font-size: 8pt;
+  line-height: 1;
+  padding: 7px 11px;
+  transition: 0.25s ease;
+  white-space: nowrap;
 }
-section:nth-of-type(2) .bar:nth-child(4) .fill {
-  transition: 1.4s 0.2s width ease-in-out;
+section:nth-of-type(2) .skill-chip:hover {
+  border-color: #04c2c9;
+  color: #036367;
+  transform: translateY(-2px);
 }
-section:nth-of-type(2) .bar:nth-child(5) .fill {
-  transition: 1.5s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(6) .fill {
-  transition: 1.6s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(7) .fill {
-  transition: 1.7s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(8) .fill {
-  transition: 1.8s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(9) .fill {
-  transition: 1.9s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(10) .fill {
-  transition: 2s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(11) .fill {
-  transition: 2.1s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(12) .fill {
-  transition: 2.2s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(13) .fill {
-  transition: 2.3s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(14) .fill {
-  transition: 2.4s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar:nth-child(15) .fill {
-  transition: 2.5s 0.2s width ease-in-out;
-}
-section:nth-of-type(2) .bar span {
-  display: none;
-}
-section:nth-of-type(2) .bar.fill {
-  left: 0;
-  position: absolute;
-  top: 0;
-  background-color: #00a1a7;
-  opacity: 1;
-  padding: 0;
-}
-section:nth-of-type(2) .bar .tag {
-  left: 0;
-  position: absolute;
-  top: 0;
+section:nth-of-type(2) .skill-chip.primary {
   background-color: #04c2c9;
+  border-color: #04c2c9;
   color: #fff;
-  height: 100%;
-  width: 150px;
-  width: 70px;
 }
-section:nth-of-type(2) .bar.secondary {
-  background-color: #c51675;
-}
-section:nth-of-type(2) .bar.secondary .tag {
-  background-color: #e31b6d;
-}
-section:nth-of-type(2) .bar span {
-  padding: 0 15px 0 0;
-  z-index: 1;
+section:nth-of-type(2) .skill-chip.primary:hover {
+  background-color: #00a1a7;
+  border-color: #00a1a7;
+  color: #fff;
 }
 section:nth-of-type(3) {
   background: #f5f5f5;
@@ -784,6 +721,15 @@ section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
 section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
   background: url("../img/thumb-9.jpg") center center/cover;
 }
+section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
+  background: url("../img/thumb-10.jpg") center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
+  background: url("../img/thumb-11.jpg") center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
+  background: url("../img/thumb-12.jpg") center center/cover;
+}
 section:nth-of-type(3) #gallery .mix .card {
   height: 240px;
   max-width: 100%;
@@ -847,7 +793,6 @@ section:nth-of-type(4) .blog-wrap.fade .fade-wrap {
 section:nth-of-type(4) .blog-wrap.hover .fade-wrap .label {
   color: #04c2c9;
 }
-
 section:nth-of-type(4) .label {
   font-size: 12pt;
   line-height: 14pt;
@@ -1030,38 +975,30 @@ footer .footnote .highlight {
   body {
     font-size: 12pt;
   }
-
   .container {
     padding: 0 20px;
   }
-
   .header {
     font-size: 30pt;
   }
-
   .header-bar {
     margin: 25px 0 100px 0;
   }
-
   .label {
     font-size: 18pt;
   }
-
   .hex-wrap {
     height: 100px;
     width: 100px;
   }
-
   .slide,
-.carousel-wrap {
+  .carousel-wrap {
     height: 450px;
   }
-
   .mdi-chevron-left,
-.mdi-chevron-right {
+  .mdi-chevron-right {
     font-size: 25pt !important;
   }
-
   .modal-wrap .modal {
     height: initial;
     top: -6vh;
@@ -1087,7 +1024,6 @@ footer .footnote .highlight {
   .modal-wrap .button {
     left: 25px;
   }
-
   nav .link-wrap {
     background: none;
     height: initial;
@@ -1098,19 +1034,18 @@ footer .footnote .highlight {
   nav .link-wrap .visible {
     height: initial;
   }
+  nav .link-wrap div:first-child {
+    padding: 0;
+  }
   nav .link-wrap div {
     display: inline;
     font-size: initial;
     margin: 0 20px;
     padding: initial;
   }
-  nav .link-wrap div:first-child {
-    padding: 0;
-  }
   nav .mdi-menu {
     display: none;
   }
-
   section {
     line-height: 18pt;
     padding: 100px 0 130px 0;
@@ -1143,16 +1078,12 @@ footer .footnote .highlight {
   section:nth-of-type(2) .skills-wrapper .me {
     height: 250px;
   }
-  section:nth-of-type(2) .bar {
-    font-size: 11pt;
-    height: 28px;
-    margin: 0 0 15px 0;
+  section:nth-of-type(2) .skill-group-title {
+    font-size: 9pt;
   }
-  section:nth-of-type(2) .bar span {
-    display: initial;
-  }
-  section:nth-of-type(2) .bar .tag {
-    width: 150px;
+  section:nth-of-type(2) .skill-chip {
+    font-size: 9.5pt;
+    padding: 8px 13px;
   }
   section:nth-of-type(2) .hexagon i {
     font-size: 40pt;
@@ -1188,12 +1119,6 @@ footer .footnote .highlight {
   section:nth-of-type(4) .blog-wrap {
     width: 400px;
   }
-
-  /* Experience */
-  section:nth-of-type(4) .experience-wrap {
-    width: 400px;
-  }
-
   section:nth-of-type(4) .thumb {
     height: 200px;
   }
@@ -1205,7 +1130,6 @@ footer .footnote .highlight {
   .waypoint {
     opacity: 0;
   }
-
   .animated.waypoint#gallery {
     opacity: 1;
   }
@@ -1245,7 +1169,6 @@ footer .footnote .highlight {
     animation: slideUp 0.75s 0.9s ease both;
     opacity: 0;
   }
-
   .animated.slide-up {
     animation: slideUp 0.75s ease both;
   }
@@ -1267,19 +1190,15 @@ footer .footnote .highlight {
   .animated.pop-in {
     animation: popIn 1s both;
   }
-
   .canvas {
     background: #252934;
   }
-
   .button {
     font-size: 16pt;
   }
-
   .flex.row-gt-sm {
     flex-direction: row;
   }
-
   .flex-50-gt-sm {
     box-sizing: border-box;
     -webkit-flex: 1 1 50%;
@@ -1288,8 +1207,7 @@ footer .footnote .highlight {
     max-height: 100%;
     max-width: 50%;
   }
-
-  section:nth-of-type(2) .bars-wrap {
+  section:nth-of-type(2) .skills-list {
     margin: 0 0 0 0;
   }
   section:nth-of-type(2) .skills-wrapper {
@@ -1297,9 +1215,6 @@ footer .footnote .highlight {
   }
   section:nth-of-type(2) .skills-wrapper .me {
     margin: 0;
-  }
-  section:nth-of-type(2) .bar {
-    max-width: 90%;
   }
   section:nth-of-type(2) .bullet-wrap {
     height: intial;
@@ -1319,29 +1234,10 @@ footer .footnote .highlight {
     opacity: 0;
     width: 400px;
   }
-
-  /* Experience */
-  section:nth-of-type(4) .experience-wrap {
-    margin: 0 0 50px 20px;
-    opacity: 0;
-    width: 400px;
-  }
 }
 @media screen and (min-width: 1280px) {
   section:nth-of-type(4) .blog-wrap {
     margin: 0 0 50px 20px;
     width: 270px;
   }
-
-    /* Experience */
-  section:nth-of-type(4) .experience-wrap {
-    margin: 0 0 50px 20px;
-    width: 270px;
-  }
 }
-
-.flick{
-  margin-left: 40px;
-  margin-right: 40px;
-}
-/*# sourceMappingURL=style.css.map */

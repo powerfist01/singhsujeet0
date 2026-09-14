@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Sujeet Singh | AI Architect & Full Stack Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sujeet Singh | AI Engineer &amp; Full Stack Developer</title>
+    <meta name="description"
+        content="AI Engineer and full-stack developer with 6+ years building agentic AI systems, LLM pipelines and scalable backends in Python, FastAPI, PostgreSQL and AWS." />
+    <meta name="author" content="Sujeet Singh" />
+    <meta name="theme-color" content="#1b242f" />
+    <link rel="canonical" href="https://singhsujeet0.web.app/" />
+
+    <!-- OPEN GRAPH (LinkedIn, Facebook, Slack) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sujeet Singh" />
+    <meta property="og:url" content="https://singhsujeet0.web.app/" />
+    <meta property="og:title" content="Sujeet Singh | AI Engineer &amp; Full Stack Developer" />
+    <meta property="og:description"
+        content="AI Engineer and full-stack developer with 6+ years building agentic AI systems, LLM pipelines and scalable backends in Python, FastAPI, PostgreSQL and AWS." />
+    <meta property="og:image" content="https://singhsujeet0.web.app/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sujeet Singh, AI Engineer" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@powerfist01" />
+    <meta name="twitter:creator" content="@powerfist01" />
+    <meta name="twitter:title" content="Sujeet Singh | AI Engineer &amp; Full Stack Developer" />
+    <meta name="twitter:description"
+        content="AI Engineer and full-stack developer with 6+ years building agentic AI systems, LLM pipelines and scalable backends in Python, FastAPI, PostgreSQL and AWS." />
+    <meta name="twitter:image" content="https://singhsujeet0.web.app/img/og-image.jpg" />
 
     <!-- HOSTED -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800&display=swap"
         rel="stylesheet" type="text/css" />
     <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
 
@@ -15,16 +45,34 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel='icon' href='favicon.ico' />
 
-    <!-- HOSTED -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sujeet Singh",
+      "url": "https://singhsujeet0.web.app/",
+      "image": "https://singhsujeet0.web.app/img/og-image.jpg",
+      "jobTitle": "AI Engineer & Full Stack Developer",
+      "alumniOf": "Indian Institute of Information Technology, Una",
+      "knowsAbout": ["AI Agents", "LangGraph", "Retrieval-Augmented Generation", "Python", "FastAPI", "PostgreSQL", "AWS"],
+      "sameAs": [
+        "https://www.linkedin.com/in/powerfist01",
+        "https://github.com/powerfist01",
+        "https://twitter.com/powerfist01"
+      ]
+    }
+    </script>
+
+    <!-- HOSTED (deferred: order is preserved) -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
     <!-- LOCAL -->
-    <script src="scripts/pt.min.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/modal.js"></script>
+    <script defer src="scripts/pt.min.js"></script>
+    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/modal.js"></script>
 </head>
 
 <body>
@@ -170,7 +218,7 @@
 
                 <div class="skills-wrapper flex row-gt-sm">
                     <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
-                        <img src="img/me_2.jpg" class="me" draggable="false" style="border-radius: 50%;" />
+                        <img src="img/me_2.jpg" class="me" alt="Sujeet Singh" draggable="false" style="border-radius: 50%;" />
                         <div class="label bold">A little about me</div>
 
                         <div class="text" style="text-align: left;">
@@ -180,96 +228,64 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:75%">
-                                <div class="tag bold flex">AI Agents</div>
+                    <div class="flex flex-50-gt-sm waypoint skills-list" data-animation="slide-in-right">
+                        <div class="skill-group waypoint" data-animation="fade-in" data-delay="0.0s">
+                            <div class="skill-group-title bold">AI &amp; LLM</div>
+                            <div class="skill-chips flex row wrap">
+                                <span class="skill-chip primary">AI Agents</span>
+                                <span class="skill-chip primary">LangGraph</span>
+                                <span class="skill-chip primary">LangChain</span>
+                                <span class="skill-chip primary">RAG</span>
+                                <span class="skill-chip primary">Claude &amp; OpenAI SDK</span>
+                                <span class="skill-chip primary">Prompt Engineering</span>
                             </div>
-                            <span>75%</span>
+                        </div>
+                        <div class="skill-group waypoint" data-animation="fade-in" data-delay="0.1s">
+                            <div class="skill-group-title bold">Languages</div>
+                            <div class="skill-chips flex row wrap">
+                                <span class="skill-chip">Python</span>
+                                <span class="skill-chip">JavaScript</span>
+                                <span class="skill-chip">SQL</span>
+                                <span class="skill-chip">C/C++</span>
+                            </div>
+                        </div>
+                        <div class="skill-group waypoint" data-animation="fade-in" data-delay="0.2s">
+                            <div class="skill-group-title bold">Backend &amp; APIs</div>
+                            <div class="skill-chips flex row wrap">
+                                <span class="skill-chip">FastAPI</span>
+                                <span class="skill-chip">Django</span>
+                                <span class="skill-chip">Flask</span>
+                                <span class="skill-chip">Node.js</span>
+                                <span class="skill-chip">gRPC</span>
+                                <span class="skill-chip">REST</span>
+                            </div>
+                        </div>
+                        <div class="skill-group waypoint" data-animation="fade-in" data-delay="0.3s">
+                            <div class="skill-group-title bold">Data</div>
+                            <div class="skill-chips flex row wrap">
+                                <span class="skill-chip">PostgreSQL</span>
+                                <span class="skill-chip">MySQL</span>
+                                <span class="skill-chip">Elasticsearch</span>
+                                <span class="skill-chip">Redis</span>
+                            </div>
+                        </div>
+                        <div class="skill-group waypoint" data-animation="fade-in" data-delay="0.4s">
+                            <div class="skill-group-title bold">Cloud &amp; DevOps</div>
+                            <div class="skill-chips flex row wrap">
+                                <span class="skill-chip">AWS (Lambda, S3, EC2)</span>
+                                <span class="skill-chip">Docker</span>
+                                <span class="skill-chip">CI/CD</span>
+                                <span class="skill-chip">Apache</span>
+                            </div>
+                        </div>
+                        <div class="skill-group waypoint" data-animation="fade-in" data-delay="0.5s">
+                            <div class="skill-group-title bold">Frontend</div>
+                            <div class="skill-chips flex row wrap">
+                                <span class="skill-chip">Vue.js</span>
+                                <span class="skill-chip">Nuxt 3</span>
+                            </div>
                         </div>
 
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:65%">
-                                <div class="tag bold flex">Agentic RAG</div>
-                            </div>
-                            <span>65%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:75%">
-                                <div class="tag bold flex">LangGraph</div>
-                            </div>
-                            <span>75%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:85%">
-                                <div class="tag bold flex">Python</div>
-                            </div>
-                            <span>85%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:85%">
-                                <div class="tag bold flex">JavaScript</div>
-                            </div>
-                            <span>85%</span>
-                        </div>
-
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:75%">
-                                <div class="tag bold flex">SQL</div>
-                            </div>
-                            <span>75%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:70%">
-                                <div class="tag bold flex">Node.js</div>
-                            </div>
-                            <span>70%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:80%">
-                                <div class="tag bold flex">FastAPI</div>
-                            </div>
-                            <span>80%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:80%">
-                                <div class="tag bold flex">Vue.js / Nuxt 3</div>
-                            </div>
-                            <span>80%</span>
-                        </div>
-
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:75%">
-                                <div class="tag bold flex">CI/CD</div>
-                            </div>
-                            <span>75%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:80%">
-                                <div class="tag bold flex">AWS</div>
-                            </div>
-                            <span>80%</span>
-                        </div>
-
-                        <div class="bar flex">
-                            <div class="bar fill" style="width:75%">
-                                <div class="tag bold flex">Docker</div>
-                            </div>
-                            <span>75%</span>
-                        </div>
-
-
-                    </div>
                 </div>
             </div>
         </section>
@@ -567,16 +583,10 @@
             </div>
         </footer>
     </div>
-    <script src="scripts/canvas.js"></script>
-    <!-- Firebase -->
-    <script defer src="/__/firebase/7.14.2/firebase-app.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    <script defer src="scripts/canvas.js"></script>
+    <!-- Firebase Analytics -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
 
     <script>
         // Your web app's Firebase configuration
@@ -591,9 +601,11 @@
             appId: "1:981059813827:web:4612af8b1ac03b8a19fd76",
             measurementId: "G-4SR11421CL"
         };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        firebase.analytics();
+        // Initialize Firebase once the deferred SDK has executed
+        window.addEventListener('DOMContentLoaded', function () {
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        });
     </script>
 
 
